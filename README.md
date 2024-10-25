@@ -38,8 +38,6 @@ A modern, feature-rich file upload component built with React, TypeScript, and E
 ### Frontend
 
 ```bash
-# Clone the repository
-git clone [repository-url]
 
 # Navigate to the client directory
 cd upload-client
@@ -62,14 +60,6 @@ npm install
 
 # Start the development server
 npm run dev
-```
-
-### Environment Variables
-
-#### Frontend (.env)
-
-```env
-VITE_API_URL=http://localhost:3000
 ```
 
 #### Backend (.env)
@@ -184,14 +174,6 @@ function App() {
 - Automatic retry mechanism
 - User-friendly error notifications
 - Network error recovery
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
