@@ -7,6 +7,7 @@ import path from "path";
 import uploadRoutes from "./routes/uploadRoutes";
 import { errorHandler } from "./middleware/errorHandler";
 import config from "./config/config";
+import { startCleanupJob } from "./scripts/cleanupJob";
 
 const app = express();
 
@@ -46,6 +47,7 @@ mongoose
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
       console.log(`Upload directory: ${config.uploadDir}`);
+      startCleanupJob();
     });
   })
   .catch((error) => {
